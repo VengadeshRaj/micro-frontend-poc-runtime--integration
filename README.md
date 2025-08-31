@@ -22,10 +22,10 @@ Here we have used Runtime Integration(#5) approach,Different approaches are list
 ## Pros and Cons of Runtime Integration:
 
 ### Pros:
-    Works with CRA easily.
-    Teams can deploy independently.
-    No webpack-specific setup required.
+1. Works with CRA easily.
+2. Teams can deploy independently.
+3. No webpack-specific setup required.
 
 ### Cons:
-        Requires global functions → tight coupling.
-        No automatic dependency sharing (React can be duplicated).
+1. Requires global functions → tight coupling.
+2. No automatic dependency sharing (React can be duplicated).
