@@ -38,7 +38,7 @@ Node JS installed.
 - Go to the container app root folder
 - Run `npm run start` command to start the container app.
 - Ensure container app running properly in `localhost:3000`
-- Open each mfe in order (eg.form,table)
+- Open each mfe in order.
 - Run `npm run start` command in each mfe root folder.
 - Ensure mfe's running in allocated ports (eg. `localhost:9001` and `localhost:9002`)
 - Refresh the container app to complete the integration.
