@@ -29,3 +29,16 @@ Here we have used Runtime Integration(#2) approach,Different approaches are list
 ### Cons:
 1. Requires global functions → tight coupling.
 2. No automatic dependency sharing (React can be duplicated).
+
+
+## Prerequisites:
+    Node JS installed.
+
+## Run the app locally:
+    - Go to the container app root folder
+    - Run `npm run start` command to start the container app.
+    - Ensure container app running properly in `localhost:3000`
+    - Open each mfe in order (eg.form,table)
+    - Run `npm run start` command in each mfe root folder.
+    - Ensure mfe's running in allocated ports (eg. `localhost:9001` and `localhost:9002`)
+    - Refresh the container app to complete the integration.
