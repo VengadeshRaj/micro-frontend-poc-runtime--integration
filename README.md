@@ -3,7 +3,7 @@ POC of react micro frontend Runtime integration with custom script injection.
 
 ## Different ways to create React micro frontends:
 React micro frontends (MFE) can be created in multiple ways depending on your architecture choice, deployment model, and team structure.
-Here we have used Runtime Integration(#5) approach,Different approaches are listed below.
+Here we have used Runtime Integration(#2) approach,Different approaches are listed below.
 
 1. Webpack Module Federation (Most Popular)
     - Uses Webpack 5’s Module Federation Plugin to dynamically import components or entire apps from other builds at runtime.
