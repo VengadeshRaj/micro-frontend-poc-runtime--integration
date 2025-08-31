@@ -1,19 +1,33 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import { createRoot } from "react-dom/client";
+import "./index.css";
+import App from "./App";
 
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-);
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+declare global {
+  interface Window {
+    renderMicrofrontend2: (containerId: string, history?: any) => void;
+    unmountMicrofrontend2: (containerId: string) => void;
+  }
+}
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+window.renderMicrofrontend2 = (containerId:string, history:any) => {
+  const container:any = document.getElementById(containerId);
+  if (container) {
+    const root = createRoot(container);
+    root.render(<App history={history} />);
+  }
+};
+
+window.unmountMicrofrontend2 = (containerId:string) => {
+  const container = document.getElementById(containerId);
+  if (container) {
+    const root = createRoot(container);
+    root.unmount();
+  }
+};
+
+const rootContainer = document.getElementById("root");
+if (rootContainer && !document.getElementById("Microfrontend2-container")) {
+  createRoot(rootContainer).render(<App />);
+}
+
