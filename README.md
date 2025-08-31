@@ -5,26 +5,26 @@ POC of react micro frontend Runtime integration with custom script injection.
 React micro frontends (MFE) can be created in multiple ways depending on your architecture choice, deployment model, and team structure.
 Here we have used Runtime Integration(#5) approach,Different approaches are listed below.
 
-    1. Webpack Module Federation (Most Popular)
-        - Uses Webpack 5’s Module Federation Plugin to dynamically import components or entire apps from other builds at runtime.
-    2. Iframes
-        - Each micro frontend runs in an iframe embedded in the parent shell.
-    3. Single-spa
-        - Framework-agnostic micro frontend orchestrator. You register apps (React, Angular, Vue, etc.) and single-spa decides which to load/unload based on route.
-    4. Build-time Integration (Monorepo with Lerna, Turborepo, Nx)
-        - Multiple apps/components developed independently but bundled together during the build step into one React app.
-    5. Custom Runtime Integration
-         - Each MFE is built as a Web Component
-    6. Server-side Composition
-        - Micro frontends are combined at the server level before sending HTML to the client
+1. Webpack Module Federation (Most Popular)
+    - Uses Webpack 5’s Module Federation Plugin to dynamically import components or entire apps from other builds at runtime.
+2. Custom Runtime Integration
+    - Each MFE is built as a Web Component
+3. Iframes
+    - Each micro frontend runs in an iframe embedded in the parent shell.
+4. Single-spa
+    - Framework-agnostic micro frontend orchestrator. You register apps (React, Angular, Vue, etc.) and single-spa decides which to load/unload based on route.
+5. Build-time Integration (Monorepo with Lerna, Turborepo, Nx)
+    - Multiple apps/components developed independently but bundled together during the build step into one React app.
+6. Server-side Composition
+    - Micro frontends are combined at the server level before sending HTML to the client
 
 
 ## Pros and Cons of Runtime Integration:
 
 ### Pros:
-        Works with CRA easily.
-        Teams can deploy independently.
-        No webpack-specific setup required.
+    Works with CRA easily.
+    Teams can deploy independently.
+    No webpack-specific setup required.
 
 ### Cons:
         Requires global functions → tight coupling.
