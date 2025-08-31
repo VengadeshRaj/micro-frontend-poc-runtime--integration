@@ -32,13 +32,13 @@ Here we have used Runtime Integration(#2) approach,Different approaches are list
 
 
 ## Prerequisites:
-    Node JS installed.
+Node JS installed.
 
 ## Run the app locally:
-    - Go to the container app root folder
-    - Run `npm run start` command to start the container app.
-    - Ensure container app running properly in `localhost:3000`
-    - Open each mfe in order (eg.form,table)
-    - Run `npm run start` command in each mfe root folder.
-    - Ensure mfe's running in allocated ports (eg. `localhost:9001` and `localhost:9002`)
-    - Refresh the container app to complete the integration.
+- Go to the container app root folder
+- Run `npm run start` command to start the container app.
+- Ensure container app running properly in `localhost:3000`
+- Open each mfe in order (eg.form,table)
+- Run `npm run start` command in each mfe root folder.
+- Ensure mfe's running in allocated ports (eg. `localhost:9001` and `localhost:9002`)
+- Refresh the container app to complete the integration.
